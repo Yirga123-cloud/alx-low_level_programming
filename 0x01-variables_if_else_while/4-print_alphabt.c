@@ -2,21 +2,19 @@
 /**
  *main - entry point
  *
- *Description: prints whole alphabet in lowercase except q and c
+ *Description:prints all single digits starting from 0
  *
- *Return: Always zero(successful)
+ *Return: Always returns zero
  *
  */
 int main(void)
 {
-	int letter, n;
+	int i = 0;
 
-	for (letter = 97, n = 1; n < 27; letter++, n++)
+	for (i = 0; i < 10; i++)
 	{
-		if (letter == 101 || letter == 113)
-			continue;
-		putchar(letter);
+		printf("%d", i);
 	}
-		putchar(10);
-		return (0);
+	printf("\n");
+	return (0);
 }
