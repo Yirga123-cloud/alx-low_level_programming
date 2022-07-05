@@ -1,15 +1,19 @@
+#include <unistd.h>
 #include "main.h"
+
 /**
-*main - prints the string _putchar from string array
-*Return: 0 on success
-*/
+ * main - Print _putchar using the function called main
+ * Description: It prints the word _putchar, followed by a new line.
+ * Return: 0.
+ */
 int main(void)
 {
-	char c[]="_putchar";
-	int i;
-	for (i=0;i<9;i++)
-	{
-		_putchar(c[i]);
-		_putchar('\n');
-		retern (0);
-		}
+ char word[] = "_putchar";
+ int i;
+
+ for (i = 0; i < 8; i++)
+  _putchar(word[i]);
+ _putchar('\n');
+
+ return (0);
+}
