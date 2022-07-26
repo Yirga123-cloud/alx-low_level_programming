@@ -1,1 +1,1 @@
-0x0A-argc_argv
+ALX argument count and argument value
